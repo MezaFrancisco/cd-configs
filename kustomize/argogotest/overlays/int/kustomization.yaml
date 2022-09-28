@@ -1,4 +1,11 @@
-bases:
-  - "../../base/"
-patches:
-  - deployment.yaml
+patchesStrategicMerge:
+- deployment.yaml
+
+images:
+- name: argogotest
+  newName: mezafrank/argogotest
+  newTag: 0.0.07
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base/

@@ -16,8 +16,6 @@ spec:
         app: argogotest
     spec:
       containers:
-        - name: argogotest
-          image: mezafrank/argogotest:0.0.7
           resources:
             limits:
               cpu: 100m
