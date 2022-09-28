@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argogotest
+  namespace: argo-events
+  labels:
+    app: argogotest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argogotest
+  template:
+    metadata:
+      labels:
+        app: argogotest
+    spec:
+      containers:
+        - name: argogotest
+          image: mezafrank/argogotest:0.0.7
+          resources:
+            limits:
+              cpu: 100m
+              memory: 100Mi
+            requests:
+              cpu: 50m
+              memory: 50Mi
