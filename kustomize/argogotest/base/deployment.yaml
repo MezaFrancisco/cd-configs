@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: argogotest
-          image: mezafrank/argogotest:0.0.7
+          image: argogotest:master
           imagePullPolicy: IfNotPresent
           volumeMounts:
           - name: config-volume

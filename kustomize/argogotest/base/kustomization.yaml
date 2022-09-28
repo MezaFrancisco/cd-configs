@@ -5,3 +5,8 @@ namespace: argo-events
 
 resources:
   - deployment.yaml
+
+images:
+- name: argogotest
+  newNAME: mezafrank/argogotest
+  newTag: 0.0.7
