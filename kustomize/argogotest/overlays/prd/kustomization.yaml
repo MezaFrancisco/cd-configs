@@ -1,6 +1,8 @@
 patchesStrategicMerge:
 - deployment.yaml
 
+namespace: fmeza-prd
+
 images:
 - name: argogotest
   newName: mezafrank/argogotest
