@@ -29,7 +29,6 @@ spec:
             requests:
               cpu: 50m
               memory: 50Mi
-      serviceAccount: argogotest
       volumes:
         - name: config-volume
           configMap:
