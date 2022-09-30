@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argogotest
-  namespace: fmeza-prd
   labels:
     app: argogotest
 spec:
@@ -19,9 +18,6 @@ spec:
         - name: argogotest
           image: argogotest:master
           imagePullPolicy: IfNotPresent
-          volumeMounts:
-          - name: config-volume
-            mountPath: /etc/argogotest
           resources:
             limits:
               cpu: 100m

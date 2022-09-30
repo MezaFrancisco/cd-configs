@@ -1,5 +1,7 @@
-resources:
+patches:
 - deployment.yaml
+
+namespace: fmeza-int
 
 images:
 - name: argogotest

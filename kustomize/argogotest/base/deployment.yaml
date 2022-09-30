@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argogotest
-  namespace: argo-events
   labels:
     app: argogotest
 spec:
