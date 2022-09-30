@@ -19,9 +19,6 @@ spec:
         - name: argogotest
           image: argogotest:master
           imagePullPolicy: IfNotPresent
-          volumeMounts:
-          - name: config-volume
-            mountPath: /etc/argogotest
           resources:
             limits:
               cpu: 100m
